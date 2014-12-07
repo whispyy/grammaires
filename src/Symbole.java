@@ -1,6 +1,12 @@
 
-public interface Symbole {
-
-		public boolean equals(Object o);
+public abstract class Symbole {
+	protected char symbole;
 	
+	
+	public String toString(){
+		return ""+symbole;
+	}
+
+
+
 }	

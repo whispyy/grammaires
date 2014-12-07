@@ -16,20 +16,23 @@ public class Regle {
 		return gauche+"->"+droite;
 	}
 	
-	public void setGauche(Symbole s){
+	public void setGauche(SymboleNonTerminal s){
 		this.gauche.setFirst(s);
 	}
 	
-	public void setDroite(Symbole v1, Symbole v2){
+	public void setDroite(SymboleNonTerminal v1, SymboleNonTerminal v2){
 		this.droite.add(0, v1);
 		this.droite.add(0, v2);
 	}
 	
-	public void setDroite(Symbole a){
+	public void setDroite(SymboleTerminal a){
 		this.droite.add(0, a);
 	}
 	
-	public Symbole getDroiteFirst(){
-		return this.droite.get(0);
+	public SymboleNonTerminal getGauche(){
+		return this.gauche.get(0);
+	}
+	public List<Symbole> getDroite(){
+		return this.droite;
 	}
 }

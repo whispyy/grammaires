@@ -4,17 +4,17 @@ import java.util.List;
 
 public class Alphabet {
 
-	private List<Symbole> symboles;
+	private List<SymboleTerminal> symboles;
 	
 	public Alphabet(){
-		this.symboles = (new ArrayList<Symbole>());
+		this.symboles = (new ArrayList<SymboleTerminal>());
 	}
 
-	public List<Symbole> getSymboles() {
+	public List<SymboleTerminal> getSymboles() {
 		return symboles;
 	}
 	
-	public void addSymbole(Symbole s){
+	public void addSymbole(SymboleTerminal s){
 		this.symboles.add(s);
 	}
 	
